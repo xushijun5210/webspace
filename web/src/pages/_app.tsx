@@ -3,7 +3,7 @@ import Layout from "@/components/layout";
 import { ToastContainer } from "react-toastify";
 import "@/styles/globals.css";
 import "react-toastify/dist/ReactToastify.css";
-//
+// //
 import { createWeb3Modal } from '@web3modal/wagmi/react'
 import { defaultWagmiConfig } from '@web3modal/wagmi/react/config'
 import { WagmiProvider } from 'wagmi'
@@ -37,14 +37,13 @@ createWeb3Modal({
   enableOnramp: true // Optional - false as default
 })
 
-export function Web3ModalProvider({ children }) {
+export function Web3ModalProvider() {
   return (
     <WagmiProvider config={config}>
-      <QueryClientProvider client={queryClient}>{children}</QueryClientProvider>
+      <QueryClientProvider client={queryClient}></QueryClientProvider>
     </WagmiProvider>
   )
 }
-
 export default function App({ Component, pageProps }: AppProps) {
   return (
     <Layout>
