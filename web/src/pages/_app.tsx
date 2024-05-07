@@ -26,7 +26,7 @@ const config = defaultWagmiConfig({
   chains,
   projectId,
   metadata,
-  ...wagmiOptions // Optional - Override createConfig parameters
+  //...wagmiOptions // Optional - Override createConfig parameters
 })
 
 // 3. Create modal
