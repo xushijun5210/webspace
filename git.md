@@ -4,3 +4,11 @@ git 怎么拿到远程以前版本代码
 3.使用git checkout加上commit的哈希值来切换到那个版本的代码。
 4.如果你想要基于这个旧版本的代码开始新的开发，你可以创建一个新的分支：
 5.git checkout -b new-branch-name <commit_hash> 这将会创建并切换到一个新的分支new-branch-name，它的起点是<commit_hash>指定的旧版本
+合并分支
+git merge W2D7
+查看当前是那个分支
+git status
+查看有多少个分支
+git branch 
+切换分支
+git checkout
